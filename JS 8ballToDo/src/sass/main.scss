@@ -1,0 +1,415 @@
+@import "./dragAndDrop.scss";
+@import "./button.scss";
+@import "./note.scss";
+@import "./ball8.scss";
+
+$baseFontSize: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Serif Pro', serif;
+}
+
+body {
+  position: relative;
+  background-image: url("http://ilyakhasanov.ru/images/background/91.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input,
+textarea {
+  transition: 0.3s linear;
+  outline: none;
+  padding: 20px;
+  border: 2px solid #4286f4;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: blueviolet;
+  outline-color: transparent;
+}
+
+.header {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.btn2 {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 3px solid black;
+  color: rgb(59, 59, 59);
+  font-family: "Montserrat", sans-serif;
+  transition: 0.2s;
+  border-radius: 50%;
+  border-width: 1.5px;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+
+  z-index: 1;
+
+
+
+
+}
+
+.btn2:hover {
+
+  background-image: url("https://image.flaticon.com/icons/svg/19/19897.svg");
+  background-size: contain;
+  background-position: -20px 0;
+  color: transparent;
+  box-shadow: 0 0 3px rgb(58, 58, 58);
+}
+
+.btn_add_txt {
+  font-size: 49px;
+  transform: translate(-130%, -10%);
+}
+
+
+
+.favorites {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Righteous", cursive;
+  color: black;
+  position: relative;
+}
+
+.project_title {
+  top: 40px;
+  right: 0;
+  left: 0;
+  position: absolute;
+  font-size: 66px;
+  margin: 0 auto;
+  text-align: center;
+  color: #1d4990;
+  letter-spacing: 12px;
+  font-weight: 800;
+  text-shadow: 6px 2px 5px #5858587d;
+
+
+}
+
+.favorites {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Rubik", sans-serif;
+  //font-style: italic;
+}
+
+.modal_window {
+  width: 400px;
+  align-content: center;
+  border: black 2px solid;
+  background: linear-gradient(to right, #000c40a1, #f0f2f0f5);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+}
+
+.modal_wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
+.main__card-todo {
+  border-radius: 15px;
+  border-color: grey;
+  border-width: 1.5px;
+  border-style: solid;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.show {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.main_title_input {
+  border-radius: 15px;
+  width: 90%;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-color: grey;
+  border-width: 2x;
+  height: 20px;
+}
+
+.main_content_text {
+  border-radius: 15px;
+  width: 90%;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-color: grey;
+  border-width: 2px;
+  position: relative;
+}
+
+favCheckbox {
+  position: absolute;
+  right: 90px;
+  bottom: 2px;
+}
+
+.main__title,
+.main_content {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.btn {
+  width: 50%;
+  border-radius: 15px;
+  padding-bottom: 3px;
+  font-weight: 500;
+  border-width: 1px;
+  border-color: grey;
+  font-family: "Righteous", cursive;
+  padding: 10px;
+  transition: 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    background: #fff;
+  }
+}
+
+// .btn2 {
+//     text-decoration: none;
+//    outline: none;
+//    display: inline-block;
+//    margin: 10px 20px;
+//    position: relative;
+//    padding: 10px 30px;
+//    border: 2px solid #f1c40f;
+//    color: #f1c40f;
+//    font-family: 'Montserrat', sans-serif;
+//    transition: .4s;
+// }
+
+// .btn2:after {
+//     content: "";
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    right: 0;
+//    bottom: 0;
+//    width: 100%;
+//    height: 100%;
+//    margin: auto;
+//    border: 2px solid rgba(0,0,0,0);
+//    transition: .4s;
+// }
+
+// .btn2:after:hover {
+//     border-color: #f1c40f;
+//    width: calc(100% - 10px);
+//    height: calc(100% + 10px);
+
+// }
+
+@function pxToRem($val) {
+  $remSize: $val/$baseFontSize;
+  @return #{$remSize}rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  border-width: 1px;
+  border-color: grey;
+}
+
+ul {
+  list-style: none;
+}
+
+.container--width {
+  max-width: 90.9rem;
+  min-width: pxToRem(320px);
+}
+
+.footer {
+  padding: 2rem 0;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__card-container {
+  flex-basis: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__ball-container {
+  flex-basis: 30%;
+}
+
+.status_wrapper {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.status_name {
+  margin: 0 auto;
+  text-shadow: #fff 0px 0px 2px, #fff 0px 0px 4px, #fff 0px 0px 7px;
+}
+
+.toDo {
+  display: flex;
+  color: rgb(65, 64, 64);
+  font-size: 24px;
+}
+
+.inProgress {
+  display: flex;
+  color: rgb(151, 151, 151);
+  font-size: 24px;
+}
+
+.Completed {
+  display: flex;
+  color: rgb(47, 88, 177);
+  font-size: 24px;
+}
+
+.main__card {
+  position: relative;
+  padding: 1rem 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffba;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #505050;
+  box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.15);
+}
+
+.main__card-todo {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: inset 0px 0px 11px 0px rgba(90, 90, 90, 0.3);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+  background: #c3c3c32b;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.main__card-title {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.main__card-fav {
+  width: 25px;
+  height: 25px;
+  background-image: url("http://download.seaicons.com/download/i66037/lovuhemant/merry-christmas/lovuhemant-merry-christmas-star-full.ico");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0.1875rem;
+  right: 0.1875rem;
+}
+
+.title {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+}
+
+.content {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+}
+
+.todo-trash_wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .todo-trash {
+    width: 120px;
+    height: 180px;
+    position: absolute;
+    z-index: 111;
+    left: 0;
+    top: 0;
+  }
+
+  svg {
+    width: 80px;
+    height: 80px;
+    fill: #c1b8b8;
+  }
+}

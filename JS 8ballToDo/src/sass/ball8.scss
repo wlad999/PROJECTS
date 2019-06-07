@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /* border: 1px solid red; */
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index: 1;
+
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.wrapper {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.ball {
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+
+  background: -webkit-radial-gradient(100px 100px, circle, #1f2327, #000);
+  box-shadow: inset 0 0 20px 5px rgba(107, 107, 107, 0.5);
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  // transition: 0s linear;
+  // transition-delay: .7s;
+}
+
+.circle {
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(to right, #21223c, #000000);
+
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+  box-shadow: inset 0 0 14px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.circleHover {
+  width: 55%;
+  height: 50%;
+  background: linear-gradient(to right, #21223c, #000000);
+
+  border-radius: 50%;
+  transform: translate(-65%, 45%) rotateY(90deg);
+  box-shadow: inset 0 0 14px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  background: whitesmoke;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  vertical-align: center;
+  font-size: 25vh;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.circle2Hover {
+  width: 55%;
+  height: 50%;
+
+  border-radius: 50%;
+  transform: translate(65%, -45%) rotateY(-90deg);
+  box-shadow: inset 0 0 14px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+  color: white;
+  transition: 1s;
+  opacity: 0;
+  font-size: 22px;
+}
+
+.textHover {
+  width: 80%;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  text-align: center;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Amatic SC", cursive;
+  text-shadow: 0px 2px 20px rgb(241, 1, 1);
+}
+
+.author {
+  font-family: "Amatic SC", cursive;
+  color: #c1b8b8;
+  font-size: 21px;
+}
+
+.afor {
+  font-family: "Amatic SC", cursive;
+  font-size: 19px;
+  letter-spacing: 1.5px;
+}
+
+.ball8 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  z-index: 5;
+  /* Webkit */
+  background-image: -webkit-gradient(radial,
+      50% 50%,
+      2,
+      50% 50%,
+      40,
+      from(white),
+      color-stop(0.1, rgba(54, 54, 54, 0.5)),
+      to(transparent)),
+    -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(65, 60, 58, 0.4)), to(transparent)),
+    -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255, 255, 255, 0.9)), color-stop(0.05, rgba(65, 65, 65, 0.3)), to(transparent)),
+    -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255, 255, 255, 0.4)), color-stop(0.03, rgba(47, 48, 42, 0.2)), to(transparent));
+  /* Firefox */
+  background-image: -moz-radial-gradient(circle,
+      #ffffff 2px,
+      rgba(248, 255, 128, 0.5) 4px,
+      transparent 40px),
+    -moz-radial-gradient(circle, #ffffff 1px, rgba(255, 186, 170, 0.4) 3px, transparent 30px),
+    -moz-radial-gradient(circle, rgba(255, 255, 255, 0.9) 1px, rgba(251,
+        255,
+        186,
+        0.3) 2px, transparent 40px),
+    -moz-radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(253,
+        255,
+        219,
+        0.2) 1px, transparent 30px);
+  /* Background images size */
+  background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+  /* Background images position*/
+  background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+  transition: 0.7s ease-in-out;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+
+    .ball {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
