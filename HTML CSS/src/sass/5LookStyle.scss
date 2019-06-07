@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.FiveSectionLook {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 15px 18px 45px;
+}
+
+.mainTextContainer {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto 45px;
+}
+
+.mainText {
+    font-family: "Acrom";
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+
+}
+
+.blackBgTextWhite {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.secondTextContainer {
+    max-width: 60%;
+    height: auto;
+    margin: 0 0 40px 110px;
+    position: relative;
+
+}
+
+.secondTextContainer::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    display: inline-block;
+    width: 29px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+}
+
+.secondText {
+    font-size: 14px;
+    font-family: "Acrom";
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.slider {
+    position: relative;
+    max-width: 80%;  
+    margin: 0 auto;
+    box-shadow:
+        0px 10px 20px 5px rgba(223, 223, 223, 1);
+
+}
+
+.slideContainer {
+    overflow-y: scroll;
+    padding: 20px 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 95%;
+
+}
+
+.slideContainer::-webkit-scrollbar {
+    width: 2px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+}
+
+.slideContainer::-webkit-scrollbar-track {
+    background-color: rgb(223, 223, 223);
+}
+
+.slideContainer::-webkit-scrollbar-track-piece {
+    background-color: rgb(223, 223, 223);
+}
+
+.slideContainer::-webkit-scrollbar-thumb {
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+}
+
+.sliderPictureContainer {
+    max-width: 40%;
+    position: sticky;
+    top: 0;
+}
+
+.SliderPicture {
+    margin: 0 auto 10px;
+}
+
+.pictureTitle {
+    font-size: 5px;
+    font-family: "Acrom";
+    font-weight: bolder;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.sliderTitleAbout {
+    max-width: 60%;
+}
+
+.titleAbout {
+    height: 175px;
+    font-size: 6px;
+    font-family: "Acrom";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 10px;
+
+}
+
+.slideLeft {
+    position: absolute;
+    bottom: -20px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    background-image:
+        url(../images/block-5/SliderButtonArrowLeft.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.slideRight {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    background-image:
+        url(../images/block-5/SliderButtonArrowRight.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+
+.EkaterinaIllarionova {
+    display: none;
+}
+
+.NatalyaIvanova {
+    display: none;
+}
+
+.sliderLinks {
+    text-decoration: none;
+    position: absolute;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    font-family: "Acrom";
+    font-weight: bolder;
+    font-style: normal;
+
+}
+
+.sliderLinks:hover {
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.sliderChengeToOne {
+    bottom: -25px;
+    left: 20px;
+}
+
+.sliderChengeToTwo {
+    bottom: -25px;
+    left: 50px;
+}
+
+.sliderChengeToThree {
+    bottom: -25px;
+    left: 80px;
+}
+
+@media (min-width: 768px) {
+
+    .FiveSectionLook {
+        max-width: 768px;
+        display: flex;
+        margin: 0 auto;
+        padding: 55px 64px 55px;
+    }
+
+    .textContainer {
+        max-width: 40%;
+    }
+
+    .mainTextContainer {
+        max-width: 60%;
+        margin: 0 auto 20px;
+    }
+
+    .mainText {
+        font-size: 27px;
+        margin: 0;
+
+    }
+
+    .secondTextContainer {
+        max-width: 38%;
+        margin: 0 0 40px 82px;
+
+    }
+
+    .secondText {
+        font-size: 10px;
+    }
+
+    .SliderPicture {
+        width: 75px;
+        height: 75px;
+    }
+
+    .pictureTitle {
+        font-size: 9px;
+    }
+
+    .titleAbout {
+        font-size: 8px;
+    }
+
+    .slider {
+        max-width: 60%;
+        height: 280px;
+    }
+
+    .titleAbout {
+        height: 240px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .FiveSectionLook {
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 55px 244px 55px;
+    }
+
+    .textContainer {
+        max-width: 40%;
+    }
+
+    .mainTextContainer {
+        max-width: 60%;
+        margin: 0 auto 40px;
+    }
+
+    .mainText {
+        font-size: 27px;
+        margin: 0;
+
+    }
+
+    .secondTextContainer {
+        max-width: 40%;
+        margin: 0 auto 0 120px;
+        font-size: 16px;
+
+    }
+
+    .secondText {
+        font-size: 12px;
+    }
+
+    .secondTextContainer::before {
+        width: 29px;
+        height: 3px;
+        margin-left: -15px;
+    }
+
+    .SliderPicture {
+        width: 75px;
+        height: 75px;
+    }
+
+    .pictureTitle {
+        font-size: 9px;
+    }
+
+    .titleAbout {
+        font-size: 8px;
+    }
+
+    .slideContainer {
+        padding: 30px 0 30px;
+    }
+
+    .slider {
+        max-width: 60%;
+        height: 320px;
+    }
+
+    .titleAbout {
+        line-height: 15px;
+        font-size: 12px;
+        height: 230px;
+    }
+
+    .sliderLinks {
+        font-size: 12px;
+    }
+}
+

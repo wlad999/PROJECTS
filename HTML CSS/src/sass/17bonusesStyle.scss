@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bonusesMainContainer {
+    max-width: 480px;
+    // width: 90%;
+    margin: 0 auto;
+    padding: 40px 18px 45px;
+
+    .TitleContainer {
+        width: 70%;
+        margin: 0 auto;
+
+        .mainTitleConteiner {
+            margin: 0 auto 60px;
+
+            .topTitle_takeBonuses {
+                margin: 0 auto 18px;
+                font-family: "Acrom";
+                font-size: 18px;
+                text-transform: uppercase;
+
+                .blackBG_txt {
+                    background-color: rgb(0, 0, 0);
+                    color: rgb(255, 255, 255);
+                }
+            }
+
+            .bottomTitle_takeBonuses::before {
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: 20px;
+                display: block;
+                width: 29px;
+                height: 3px;
+                background-color: rgb(0, 0, 0);
+            }
+
+            .bottomTitle_takeBonuses {
+                padding: 0 20px 0 60px;
+                position: relative;
+                font-size: 14px;
+                font-family: "Acrom";
+                line-height: 20px;
+            }
+        }
+
+        .secondTitleContainer {
+            width: 100%;
+            height: auto;
+            margin: 0 auto 28px;
+            padding: 0 0 0 50px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 5px 0 10px 0 rgb(255, 255, 255);
+
+            .proffesionCard_pdf::before {
+                content: '01.';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -8px;
+                font-size: 26px;
+            }
+
+            .translatorTo_pdf::before {
+                content: '02.';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -8px;
+                font-size: 26px;
+            }
+
+            .bottomTitle_PDF::before {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                background-color: rgb(22, 235, 254);
+                position: absolute;
+                top: 30px;
+                left: 25px;
+
+            }
+
+            .topTitle_PDF {
+                margin: 0 auto 10px;
+                text-transform: uppercase;
+                font-family: "Acrom";
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .bottomTitle_PDF {
+                font-family: "Acrom";
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 20px;
+
+                .blackBG_txt {
+                    background-color: rgb(0, 0, 0);
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+
+    .formContainer {
+        max-width: 372px;
+        height: 347px;
+        margin: 0 auto;
+        padding: 65px;
+        display: flex;
+        flex-direction: column-reverse;
+        box-shadow: 0px 10px 20px 0px rgba(203, 203, 203, 1);
+
+        .inputTitle {
+            color: rgb(191, 191, 191);
+            font-size: 8px;
+            font-family: "Acrom";
+        }
+
+        .inputTitle:focus+.inputYourData {
+            color: rgb(255, 107, 8);
+
+        }
+
+        .inputYourData {
+            border: none;
+            border-bottom: 1px solid rgb(191, 191, 191);
+            height: 30px;
+            font-size: 9px;
+            color: rgb(0, 0, 0);
+            font-family: "Acrom";
+            font-weight: bold;
+            margin: 0 0 20px 0;
+        }
+
+        .inputYourData[type=email] {
+            margin: 0 0 35px 0;
+        }
+
+        .inputYourData:focus {
+            border-bottom: 1px solid rgb(255, 107, 8);
+            outline: none;
+
+            +.inputTitle {
+                color: rgb(255, 107, 8);
+            }
+        }
+
+
+        .inputYourData:focus::placeholder {
+            text-indent: 500px;
+            transition: text-indent 0.8s ease;
+        }
+
+        .inputYourData::placeholder {
+            color: rgb(0, 0, 0);
+            font-family: "Acrom";
+            font-weight: bold;
+
+        }
+
+        .buttonContainer {
+            width: 170px;
+            height: 34px;
+
+
+            .formBTNgetVideo {
+                box-shadow: 8px 8px 20px 0px rgba(228, 89, 34, 0.39);
+                width: 183px;
+                height: 34px;
+                background-color: rgb(255, 107, 8);
+                border: none;
+                cursor: pointer;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                font-size: 8px;
+                font-family: "Acrom";
+
+                &:hover {
+                    background-color: rgb(23, 236, 255);
+                }
+
+                &:focus {
+                    background-color: rgb(6, 164, 178);
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .bonusesMainContainer {
+        max-width: 768px;
+        // width: 90%;
+        display: flex;
+        padding: 57px 65px 57px;
+
+        .TitleContainer {
+            width: 54%;
+
+            .mainTitleConteiner {
+                margin: 0 auto 38px;
+
+                .topTitle_takeBonuses {
+                    font-size: 27px;
+                    margin: 0 auto 27px;
+                }
+
+                .bottomTitle_takeBonuses::before {
+                    width: 30px;
+                    height: 3px;
+                    left: 0;
+                    top: 6px;
+                }
+
+                .bottomTitle_takeBonuses {
+                    font-size: 9px;
+                    padding: 0 140px 0 48px;
+                    line-height: 13px;
+
+                }
+
+            }
+
+            .secondTitleContainer {
+                padding: 0 130px 0 38px;
+                margin: 0 auto 0;
+
+                .proffesionCard_pdf::before {
+                    font-size: 17px;
+                }
+
+                .translatorTo_pdf::before {
+                    font-size: 17px;
+                }
+
+                .topTitle_PDF {
+                    font-size: 9px;
+                    margin: 0 auto 12px;
+
+                }
+
+                .bottomTitle_PDF::before {
+                    height: 8px;
+                    width: 8px;
+                    top: 20px;
+                    left: 12px;
+
+                }
+
+                .bottomTitle_PDF {
+                    font-size: 8px;
+                    line-height: 12px;
+                    margin: 0 auto 21px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+
+
+    .bonusesMainContainer {
+        min-width: 1200px;
+        // width: 90%;
+        display: flex;
+        justify-content: center;
+        padding: 63px 244px 63px;
+
+        .TitleContainer {
+            width: 50%;
+            margin: 0 ;
+
+            .mainTitleConteiner {
+                margin: 0 auto 45px;
+
+                .topTitle_takeBonuses {
+                    font-size: 30px;
+                    margin: 0 auto 26px;
+                    line-height: 41px;
+                }
+
+                .bottomTitle_takeBonuses::before {
+                    width: 30px;
+                    height: 3px;
+                    left: 0;
+                    top: 5px;
+                }
+
+                .bottomTitle_takeBonuses {
+                    font-size: 10px;
+                    padding: 0 160px 0 54px;
+                    line-height: 13px;
+
+                }
+
+            }
+
+            .secondTitleContainer {
+                padding: 0 130px 0 38px;
+                margin: 0 auto;
+
+                .proffesionCard_pdf::before {
+                    font-size: 17px;
+                }
+
+                .translatorTo_pdf::before {
+                    font-size: 17px;
+                }
+
+                .topTitle_PDF {
+                    font-size: 10px;
+                    margin: 0 auto 14px;
+
+                }
+
+                .bottomTitle_PDF::before {
+                    height: 8px;
+                    width: 8px;
+                    top: 20px;
+                    left: 12px;
+
+                }
+
+                .bottomTitle_PDF {
+                    font-size: 9px;
+                    line-height: 12px;
+                    margin: 0 auto 24px;
+                }
+            }
+        }
+        .formContainer {
+            width: 50%;
+            margin: 0;
+            padding: 62px;
+        }
+    }
+}

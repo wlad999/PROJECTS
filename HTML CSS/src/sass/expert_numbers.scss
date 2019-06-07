@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-expert {
+  margin: auto;
+  text-align: center;
+  font-family: "Acrom" , sans-serif;
+  padding: 25px 18px 40px;
+  max-width: 480px;
+}
+
+.wrapper-image {
+  margin: auto;
+  text-align: center;
+}
+
+.man-with-tea {
+  margin-bottom: 34px;
+  width: 100%;
+}
+.man-with-tea768 {
+  display: none;
+}
+
+.section-name {
+  text-align: left;
+  width: 80%;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 255);
+
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: auto auto 10px;
+
+}
+
+.wrapper-future-1 {
+  margin-bottom: 31px;
+}
+.section-name-end {
+  background-color: black;
+}
+
+.motivation {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 255);
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+
+.section-text {
+  font-size: 13px;
+  color: rgba(63, 65, 68, 255);
+  text-align: left;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 52px;
+}
+
+.blue-color {
+  background-color: aqua;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.line-with-text{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-bottom:  43px;
+
+  &__wrapper {
+    width: 14px;
+    margin-right: 10px;
+  }
+  &__line {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-right: 10px;
+    margin-top: 6px;
+
+  }
+  &__text {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+
+  }
+}
+
+
+.item-list {
+  width: 90%;
+  text-align: left;
+  list-style-type: square;
+  margin: auto;
+  &__name {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  &__text {
+    color: rgba(63, 65, 68, 255);
+    margin-bottom: 21px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+.none-margin {
+  margin-bottom: 0;
+}
+
+.list-section-expert {
+  margin-bottom: 41px;
+}
+
+@media  (min-width: 768px) and (max-width: 1199px) {
+  
+  .wrapper-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  .man-with-tea {
+    display: none;
+  }
+  .man-with-tea768 {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .section-expert {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 65px 55px;
+    max-width: 768px;
+    }
+
+  .box-1-photo {
+    width: 45%;
+    margin-right: 53px;
+  }
+  .box-2-text {
+    width: 47%;
+  }
+
+  .line-with-text{
+    margin: auto auto 43px 0px;
+    margin-top: 21px;
+
+    &__wrapper {
+      width: 29px;
+      margin-right: 10px;
+    }
+    &__line {
+      width: 29px;
+      margin-top: 7px;
+      margin-right: 29px;
+    }
+    &__text {
+      font-size: 10px;
+    }
+  }
+
+  .item-list {
+    width: 90%;
+    text-align: left;
+    list-style-type: square;
+    margin: auto;
+    &__name {
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      font-size: 10px;
+    }
+    &__text {
+      color: rgba(63, 65, 68, 255);
+      margin-bottom: 20px;
+      font-size: 10px;
+      font-weight: bold;
+  }
+  }
+  .none-margin {
+    margin-bottom: 0;
+  }
+
+
+  .wrapper-future {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .wrapper-future-1 {
+    width: 35%;
+    margin-right: 33px;
+  }
+  .wrapper-future-2 {
+    width: 65%;
+  }
+
+  .section-name {
+    width: 100%;
+    margin: 0;
+    font-size: 21px;
+
+  }
+
+
+  .small-text {
+    font-size: 10px;
+    line-height: 1.7;
+
+  }
+
+  .motivation {
+    font-weight: 400;
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+  .section-text {
+    font-size: 10px;
+    color: rgba(63, 65, 68, 255);
+    text-align: left;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .box-2-section {
+    line-height: 1.5;
+  }
+  .test-2 {
+    display: none;
+  }
+  .test-3 {
+    display: none;
+  }
+  .test {
+    margin-bottom: 10px;
+  }
+
+}
+
+@media  (min-width: 1200px) {
+
+  .wrapper-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 37px;
+  }
+
+  .man-with-tea {
+    display: none;
+  }
+  .man-with-tea768 {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .section-expert {
+    display: flex;
+    justify-content: center;
+   padding: 63px 244px 62px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .box-1-photo {
+    width: 308px;
+    margin-right: 60px;
+  }
+  .box-2-text {
+    width: 47%;
+    max-width: 300px;
+  }
+
+
+
+  .line-with-text{
+    margin: auto auto 48px 0px;
+    margin-top: 25px;
+
+    &__wrapper {
+      width: 29px;
+      margin-right: 10px;
+    }
+    &__line {
+      width: 29px;
+      margin-top: 7px;
+      margin-right: 29px;
+    }
+    &__text {
+      font-size: 10px;
+
+    }
+  }
+
+  .item-list {
+    width: 90%;
+    text-align: left;
+    list-style-type: square;
+    margin: auto;
+    &__name {
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      font-size: 10px;
+    }
+    &__text {
+      color: rgba(63, 65, 68, 255);
+      margin-bottom: 20px;
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }
+  .none-margin {
+    margin-bottom: 0;
+  }
+
+
+  .wrapper-future {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .wrapper-future-1 {
+    margin-right: 38px;
+    width: 90px;
+
+  }
+  .wrapper-future-2 {
+    width: 183px;
+  }
+
+  .section-name {
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+  }
+
+
+  .small-text {
+    font-size: 10px;
+    line-height: 1.7;
+
+  }
+
+  .motivation {
+    font-weight: 400;
+    font-size: 10px;
+    width: 190px;
+  }
+
+  .section-text {
+    font-size: 10px;
+    color: rgba(63, 65, 68, 255);
+    text-align: left;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  .test-2 {
+    display: none;
+  }
+
+
+
+  .box-2-section {
+    line-height: 1.4;
+  }
+  .cifra {
+    background-color: black;
+
+  }
+
+  .cut {
+    display: inline;
+
+  }
+  .test {
+    display: none;
+  }
+
+
+}

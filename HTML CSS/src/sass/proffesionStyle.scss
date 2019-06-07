@@ -1,0 +1,192 @@
+.proffesion {
+    margin: auto;
+    padding: 36px 18px 31px;
+    max-width: 480px;
+}
+
+.proffesion__all {
+    display: flex;
+    flex-direction: column;
+}
+
+.all__hended {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.hended__proff {
+    font-size: 18px;
+    font-family: "Acrom" , sans-serif;
+    font-weight: 400;
+    margin-bottom: 21px;
+    text-transform: uppercase;
+}
+
+.hended__brain {
+    font-family: "Acrom" , sans-serif;
+    font-weight: bold;
+    font-size: 13.5px;;
+    margin-bottom: 24px;
+    width: 90%;
+}
+
+.beforeCacher {
+    display: flex;
+    position: relative;
+}
+
+.beforeCacher::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    height: 3px;
+    width: 29px;
+    background-color: #000000;
+    display: block;
+    margin-right: 5px;
+}
+
+.all__pic {
+    width: 100%;
+    margin-bottom: 39px;
+    margin: auto;
+}
+
+.pic__friends {
+    width: 100%;
+}
+
+.all__years {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    padding-top: 45px;
+}
+
+.years__sistem {
+    font-family: "Acrom" , sans-serif;
+    font-weight: 400;
+    margin-bottom: 16px;
+    font-size: 13.5px;
+    text-transform: uppercase;
+}
+
+.years__simple {
+    font-size: 13.5px;
+    font-family: "Acrom" , sans-serif;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .proffesion {
+        // width: 80%;
+        padding: 55px 65px 37px;
+        max-width: 768px;
+    }
+
+
+    .proffesion__all {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .all__hended {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 0;
+    }
+    
+    .hended__proff {
+        font-size: 27px;
+        font-family: "Acrom" , sans-serif;
+        font-weight: 400;
+        margin-bottom: 21px;
+        text-transform: uppercase;
+    }
+    
+    .hended__brain {
+        font-family: "Acrom" , sans-serif;
+        font-weight: bold;
+        font-size: 9px;
+        width: 85%;
+        margin-bottom: 24px;
+    }
+    
+    .beforeCacher {
+        display: flex;
+    }
+    
+    .beforeCacher::before {
+        content: '';
+        height: 3px;
+        width: 29px;
+        background-color: #000000;
+        display: block;
+        margin-right: 10px;
+    }
+    
+    .all__pic {
+        width: 30%;
+        margin-bottom: 39px;
+    }
+    
+    .pic__friends {
+        width: 100%;
+    }
+    
+    .all__years {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .years__sistem {
+        font-family: "Acrom" , sans-serif;
+        font-weight: 400;
+        margin-bottom: 16px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    
+    .years__simple {
+        font-size: 8px;
+        font-family: "Acrom" , sans-serif;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1200px) {
+    .proffesion {
+        // width: 56%;
+        padding: 62px 244px 62px;
+        max-width: 1200px;
+    }
+
+    .hended__proff {
+        font-size: 30px;
+    }
+
+    .hended__brain {
+        font-size: 10px;
+        width: 85%;
+    }
+
+    .years__sistem {
+        font-size: 10px;
+    }
+
+    .years__simple {
+        font-size: 10px;
+    }
+    .all__pic {
+        width: 30%;
+    }
+}

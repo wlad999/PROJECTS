@@ -1,0 +1,333 @@
+// * {
+//     // outline: 1px solid green;
+
+// }
+
+.sec9 {
+    background-color: white;
+    text-align: center;
+    // outline: 1px solid red;
+    //padding: 17px 0 33px;
+    padding: 15px 18px 33px 18px;
+    max-width: 480px;
+    margin: auto;
+}
+
+.first-sec9 {
+    text-align: center;
+    margin: auto;
+    width: 95%;
+    position: relative;
+}
+
+.sec9-back {
+    position: absolute;
+    width: 147px;
+    height: 146px;
+    top: 20px;
+    left: 20%;
+    z-index: 1;
+}
+
+    .header-sec9 {
+        width: 230px;
+        margin: auto;
+        font-family: "Acrom", sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 255);
+        text-align: left;
+        color: black;
+        text-transform: uppercase;
+        margin-bottom: 21px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .sec-9-header {
+        background-color: black;
+        color: white;
+        position: relative;
+        z-index: 5;
+    }
+
+    .sec9-h2 {
+        font-family: "Acrom", sans-serif;
+        font-size: 13.5px;
+        line-height: 19.5px;
+        font-weight: bolder;
+        color: rgba(0, 0, 0, 255);
+        text-align: left;
+        margin: auto;
+        display: inline-block;
+        width: 260px;
+        margin-bottom: 60px;
+        position: relative;
+        z-index: 10;
+        padding: 0 0 0 19px;
+    }
+
+    .sec9-h2::before {
+        content: "";
+        width: 29px;
+        height: 3px;
+        background-color: black;
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: -25px;
+    }
+
+    .sec9-main {
+        text-align: center;
+        margin: auto;
+        width: 95%;
+
+    }
+
+    .info-1 {
+        text-align: center;
+        margin: auto;
+
+    }
+
+    .info-01 {
+        text-align: left;
+        margin: auto;
+        display: flex;
+        margin: auto;
+        width: 290px;
+        position: relative;
+        margin-bottom: 33px;
+        overflow: hidden;
+    }
+
+    .text-sec-9 {
+        margin-left: 22px;
+    }
+
+    .cifra01 {
+        font-family: "Acrom", sans-serif;
+        font-size: 24.54px;
+        line-height: 29.45px;
+        color: rgba(0, 0, 0, 255);
+        text-align: left;
+        margin-left: -7px;
+    }
+
+    .cifra01::after {
+        content: '';
+        width: 11px;
+        height: 11px;
+        background-color: #16ebfe;
+        display: block;
+        margin-left: 18px;
+    }
+
+    .sec9-h3 {
+        text-transform: uppercase;
+        font-family: "Acrom", sans-serif;
+        font-size: 13.5px;
+        line-height: 21.27px;
+        color: rgba(0, 0, 0, 255);
+        text-align: left;
+        margin-bottom: 17px;
+    }
+
+    .sec9-h4sec-h4 {
+        font-family: "Acrom", sans-serif;
+        font-size: 13.5px;
+        line-height: 19.5px;
+        color: rgba(63, 65, 68, 255);
+        text-align: left;
+
+    }
+
+    .main-sec9h5 {
+        font-family: "Acrom", sans-serif;
+        font-size: 15px;
+        line-height: 19.5px;
+        color: rgba(255, 107, 8, 255);
+        text-align: left;
+        max-width: 352px;
+        margin: auto;
+        position: relative;
+    }
+
+    .main-sec9h5::before {
+        content: "";
+        background: url(./images/block-9/Shape10@1X.png);
+        width: 16px;
+        height: 27px;
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: -20px;
+    }
+
+    @media (min-width:768px) {
+
+        .sec9 {
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            align-content: flex-start;
+            padding: 46px 65px 54px 65px;
+            max-width: 768px;
+        }
+
+        .first-sec9 {
+            margin: 0;
+            width: 50%;
+            text-align: left;
+        }
+
+        .header-sec9 {
+            font-size: 27px;
+            line-height: 33px;
+            margin: 0;
+            margin-bottom: 22px;
+        }
+
+        .sec9-h2 {
+            font-size: 9px;
+            line-height: 13px;
+            width: 120px;
+            margin-left: 30px;
+        }
+
+        .sec9-main {
+            width: 50%;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+        }
+
+        .info-1 {
+            display: flex;
+            align-items: flex-start;
+            width: 100%
+        }
+
+        .info-01 {
+            margin: 0;
+        }
+
+        .cifra01 {
+            font-size: 16px;
+            line-height: 20px;
+            margin-left: -4px;
+
+        }
+
+        .cifra01::after {
+            content: '';
+            width: 7px;
+            height: 7px;
+            margin-left: 8px;
+        }
+
+        .sec9-h3 {
+            font-weight: 400;
+            font-family: "Acrom", sans-serif;
+            font-size: 9px;
+            line-height: 14px;
+            color: rgba(0, 0, 0, 255);
+            width: 88px;
+        }
+
+        .sec9-h4sec-h4 {
+            font-size: 8px;
+            line-height: 12px;
+            width: 105px;
+
+        }
+
+        .main-sec9h5 {
+            font-size: 9px;
+            line-height: 13px;
+            margin: 0;
+            width: 276px;
+            margin-left: 20px;
+
+        }
+
+        .main-sec9h5::before {
+            content: "";
+            width: 12px;
+            height: 19px;
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: -20px;
+            z-index: 1;
+        }
+
+        .sec9-back {
+            top: 0px;
+            left: 23%;
+            width: 210px;
+            height: 210px;
+        }
+
+        .sec9 {
+            padding-top: 50px;
+            padding-bottom: 56px;
+        }
+
+        .text-sec-9 {
+            margin-bottom: 26px;
+        }
+    }
+
+    @media (min-width:1200px) {
+        .sec9 {
+            padding: 63px 244px 61px 244px;
+            max-width: 1200px;
+        }
+
+        .header-sec9 {
+            font-size: 30px;
+            line-height: 37px;
+            margin: 0;
+            margin-bottom: 26px;
+        }
+
+        .sec9-h2 {
+            font-size: 10px;
+            line-height: 15px;
+            width: 120px;
+            margin-left: 30px;
+        }
+
+        .cifra01 {
+            font-size: 18px;
+            line-height: 22px;
+            margin-left: -4px;
+        }
+
+        .sec9-h3 {
+
+            font-size: 10px;
+            line-height: 16px;
+            width: 88px;
+        }
+
+        .sec9-h4sec-h4 {
+            font-size: 9px;
+            line-height: 13px;
+            width: 105px;
+        }
+
+        .main-sec9h5 {
+            font-size: 10px;
+            line-height: 15px;
+            margin: 0;
+            width: 276px;
+            margin-left: 20px;
+        }
+
+    }

@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imp_wrapper {
+    padding: 18px 18px 66px 18px;
+    font-family: "Acrom";
+    line-height: 19px;
+    font-size: 14px;
+    max-width: 480px;
+    margin: auto;
+}
+
+.imp_blueBox {
+    box-shadow: 8px 10px 50px 0px rgba(0, 0, 0, 0.192);
+    padding: 65px 45px;
+    color: white;
+    background-color: #052139;
+    margin-bottom: 30px;
+}
+
+.imp_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.imp_otstup {
+    margin-bottom: 25px;
+}
+
+.imp_blueBox-flex {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imp_grey {
+    color: rgba(63, 65, 68, 255);
+    padding-bottom: 25px;
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+}
+
+.imp_firstPrice {
+    padding-top: 18px;
+    font-size: 16px;
+
+}
+
+.imp_orange {
+    font-size: 14.4px;
+    color: #ff6b08;
+    font-weight: bold;
+    padding-bottom: 25px;
+    width: 80%;
+    margin: auto;
+}
+
+.imp_orange::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 28px;
+    background-color: black;
+    display: block;
+    left: -20px;
+    top: 4px;
+    transform: rotate(30deg);
+}
+
+.imp_hrn {
+    font-size: 14px;
+}
+
+.imp_rel {
+    position: relative;
+}
+
+.imp_bold {
+    font-size: 14.4px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+.imp_title {
+    font-weight: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.imp_blueBox-left {
+    width: 40%;
+    font-size: 13px;
+
+}
+
+.imp_aqua {
+    width: 65%;
+    color: #052139;
+    background-color: #16ebfe;
+}
+
+.imp_whiteLine {
+
+    margin-top: 28px;
+    width: 25px;
+    height: 1px;
+    background-color: white;
+}
+
+.imp_button {
+    box-shadow: 8px 8px 20px 0px rgba(228, 89, 34, 0.39);
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    background-color: #ff6b08;
+    cursor: pointer;
+}
+.imp_button:focus{
+    background-color: #15bbca;
+}
+.imp_button:hover {
+    background-color: #17ecff;
+}
+
+
+.imp_price {
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 20px;
+}
+
+.imp_center {
+    text-align: center;
+}
+
+.imp_tablet {
+    display: none;
+}
+
+@media (min-width:768px) {
+
+    .imp_wrapper {
+        max-width: 768px;
+        padding: 71px 65px 69px 65px;
+        }
+
+    .imp_mobile {
+        display: none;
+    }
+
+    .imp_tablet {
+        height: 192px;
+        width: 45%;
+        display: block;
+        background-color: #052139;
+    }
+
+    .imp_flex-tablet {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .imp_flex {
+        width: 45%;
+    }
+
+    .imp_button {
+        padding: 10px 10px;
+        width: 80%;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .imp_title {
+        font-size: 27px;
+        text-align: left;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    .imp_bold {
+        padding: 0px;
+        font-weight: 500;
+        color: black;
+        font-size: 9px;
+        line-height: 12px;
+        width: 80%;
+        margin-bottom: 10px;
+        
+    }
+
+    .imp_orange {
+        font-size: 9px;
+        padding: 0;
+        width: 80%;
+        margin-bottom: 20px;
+        line-height: 12px;
+
+    }
+
+    .imp_grey {
+        line-height: 12px;
+        padding: 0;
+        width: 80%;
+        margin-bottom: 15px;
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    .imp_orange::before {
+        font-size: 10px;
+        width: 3px;
+        height: 20px;
+        font-weight: 200;
+    }
+
+    .imp_price {
+        padding-top: 22px;
+        line-height: 22px;
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    .imp_blueBox-left {
+        font-size: 10px;
+        line-height: 15px;
+
+    }
+
+    .imp_whiteLine {
+        margin-top: 22px;
+        width: 26px;
+    }
+
+    .imp_firstPrice {
+        padding-top: 12px;
+    }
+
+    .imp_hrn {
+        font-size: 12px;
+    }
+
+    .imp_aqua {
+        width: 60%;
+        padding: 0 2px;
+        margin-top: 25px;
+        line-height: 15px;
+        font-size: 10px;
+    }
+
+    .imp_blueBox {
+        padding: 45px 25px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .imp_wrapper {
+        max-width: 1200px;
+        padding: 78px 244px 77px 244px;
+    }
+    .imp_blueBox {
+        padding: 55px 25px;
+        margin-top: 5px;
+    }
+
+    .imp_whiteLine {
+
+        margin-top: 20px;
+        width: 35px;
+        height: 2px;
+    }
+
+    .imp_aqua {
+        font-size: 14px;
+        width: 68%;
+    }
+
+    .imp_firstPrice {
+        font-size: 14px;
+    }
+
+    .imp_price {
+        padding-top: 28px;
+    }
+}

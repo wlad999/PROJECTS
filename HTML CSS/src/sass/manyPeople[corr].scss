@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Acrom";
+    // outline: 1px solid green;
+}
+.manyPeople {
+    margin: auto;
+    padding: 24px 18px 49px;
+    max-width: 480px;
+}
+.people-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    &__left {
+        padding: 0 30px 0 70px;
+        margin-bottom: 35px;
+    }
+    &__chapter {
+        width: 45%;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    &__about {
+        display: block;
+        font-size: 13.5px;
+        line-height: 19.5px;
+        font-weight: 600;
+        position: relative; 
+    }
+    &__about::before {
+        content: "";
+        width: 29px;
+        height: 3px;
+        background-color: #000000;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: -40px;
+    }
+    &__img {
+        width: 100%;
+    }
+}
+.people-bottom__left--tablet {
+    display: none;
+}
+.people-bottom {
+    display: flex;
+    flex-direction: column;
+    font-size: 13.5px;
+    line-height: 19.5px;
+    &__vaserman {
+        padding: 0 50px 0 20px;
+    }
+    &__title {
+        font-weight: 900;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        &--bg {
+            background-color: #000000;
+            margin-bottom: 1px;
+        }
+    }
+    &__text--margin {
+        margin-bottom: 45px;
+    }
+    &__sign {
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    &__about {
+        color: #3f4144;
+        font-weight: 600;
+        &--hidden {
+            display: none;
+        }
+    }
+    &__left--mobile {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__start {
+        padding: 0 50px 0 20px;
+    }
+}
+@media (min-width: 768px) {
+    .manyPeople {
+        padding: 41px 65px 53px;
+        max-width: 768px;
+    }
+    .people-top {
+        flex-direction: row;
+        &__left {
+            width: 50%;
+        }
+        &__chapter {
+            width: 62%;
+            font-size: 27px;
+            line-height: 33.65px;
+        }
+        &__about {
+            font-size: 8.97px;
+            line-height: 13.46px;
+            padding-left: 40px;
+            padding-right: 65px;
+        }
+        &__about::before {
+            content: "";
+            width: 29px;
+            left: 0;
+        }
+        &__right {
+            display: block;
+            width: 50%;
+            padding-left: 45px;
+        }
+    }
+    .people-bottom__left--mobile {
+        display: none;
+    }
+    .people-bottom {
+        width: 100%;
+        flex-direction: row;
+        &__left--tablet {
+            display: block;
+            width: 50%;
+            padding: 0 35px;
+        }
+        &__right {
+            width: 50%;
+        }
+        &__vaserman {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px 0 10px;
+        }
+        &__title {
+            width: 27%;
+            font-size: 8.97px;
+            line-height: 14.58px;
+        }
+        &__text {
+            width: 54.7%;
+        }
+        &__sign {
+            font-size: 8.97px;
+            line-height: 13.46px;
+        }
+        &__about {
+            font-size: 7.85px;
+            line-height: 11.78px;
+            &--hidden {
+                display: inline;
+            }
+        }
+        &__start {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px 0 10px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .manyPeople {
+        padding: 62px 244px 59px;
+        max-width: 1200px;
+    }
+    .people-top {
+        &__chapter {
+            font-size: 29px;
+            line-height: 37.5px;
+        }
+        &__about {
+            font-size: 10px;
+            line-height: 15px;
+        }
+    }
+    .people-bottom {
+        &__left--tablet {
+        padding: 0 55px 0 0;
+        }
+        &__vaserman {
+            padding: 0;
+        }
+        &__title {
+            font-size: 10px;
+            line-height: 16.25px;
+        }
+        &__text {
+            width: 58.8%;
+            font-size: 10px;
+            line-height: 15px;
+        }
+        &__sign {
+            font-size: 10px;
+            line-height: 15px;
+        }
+        &__about {
+            font-size: 10px;
+            line-height: 15px;
+        }
+        &__start {
+            padding: 0;
+        }
+    }
+}
